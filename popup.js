@@ -1,4 +1,4 @@
-
+let text = ''
 function login(username, passcode) {
 	return new Promise(function(resolve, reject) {
 		let xmlhttp = new XMLHttpRequest()
@@ -6,11 +6,13 @@ function login(username, passcode) {
 		xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded')
 		xmlhttp.send('userId='+username+'&password='+passcode+'&serviceName=ProntoAuthentication&Submit22=Login')
 		xmlhttp.onreadystatechange=() => {
-			if (xmlhttp.status == 200) {
-				let congratulation = new RegExp(/Congratulations/i)
+			if (xmlhttp.readyState==4 && xmlhttp.status == 200) {
+				let congratulation = new RegExp(/Successful Pronto Authentication/i)
 				let quotaOver = new RegExp(/quota is over/i)
 				let alreadyLogged = new RegExp(/already logged/i)
-				if (congratulation.test(xmlhttp.responseText)) {
+				text = xmlhttp.responseText
+				console.log(congratulation.test(text));
+				if (congratulation.test(text)) {
 					resolve({status: 1})
 				} else if (quotaOver.test(xmlhttp.responseText)) {
 					resolve({status: 2})
