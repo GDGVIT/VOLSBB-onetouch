@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(MaterialIcons-Regular.woff2)format('woff2')
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height: 300px;
+  width: 400px;
+}
+#header{
+  height: 20px;
+}
+h1{
+  font-size: 20pt;
+}
+.loading_wrapper,.login_wrapper,.logout_wrapper {
+  position: relative;
+}
+.login_wrapper{
+  margin-top: 35px;
+}
+#login{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#loading{
+  margin-top: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+#status{
+  font-size: x-large;
+  margin-top: 70px;
+}
+#spinner{
+  position: relative;
+}
+.preload{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#lbutton{
+  font-size: 15px;
+}
+#logButton{
+  display: block;
+  width: 250px;
+  position: relative;
+  font-size: 24px;
+}
+#logout{
+  position: absolute;
+  top:200px;
+  left: 50%;
+  transform: translateX(-50%);
+}

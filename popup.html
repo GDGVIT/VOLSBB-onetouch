@@ -1,30 +1,96 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
-  <head>
-    <title>Getting Started Extension's Popup</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-  
-    </style>
+<head>
+    <meta charset="utf-8">
+    <!-- build:css styles/popup-vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link rel="stylesheet" href="styles/materialize.css">
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+<body>
+<div id="header" class="container">
+    <h1 id="heading" class="center-align">VOLSBB - Login</h1>
+</div>
+<!--<small class="right-align">Alpha</small>-->
+<div class="login_wrapper center-align">
+    <div id="login" style="width: 80%;">
+        <p class="left-align" id="formStatus"></p>
+        <div class="input-field" >
+            <input required id="regno" type="text">
+            <label for="regno">Registration number</label>
+        </div>
+        <div class="input-field">
+            <input required id="pass" type="password">
+            <label for="pass">Password</label>
+        </div>
+        <button class="btn waves-effect waves-light" id="lbutton">save & Login
+            <i class="material-icons right">send</i>
+        </button>
+    </div>
+</div>
+<div class="hide loading_wrapper">
+    <div id="loading">
+        <div id="spinner">
+            <div class="row preload">
+                <div class="preloader-wrapper active">
+                    <div class="spinner-layer spinner-blue">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                    </div>
+                    <div class="spinner-layer spinner-red">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                    </div>
+                    <div class="spinner-layer spinner-yellow">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                    </div>
+                    <div class="spinner-layer spinner-green">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p id="status">Logging in...</p>
+        </div>
+    </div>
+</div>
+<div class="hide logout_wrapper">
+    <div id="logout">
+        <a id="logButton" class="btn btn-large blue">Logout  <i class="material-icons">input</i></a>
+    </div>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
-  </body>
+</div>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/materialize.min.js"></script>
+<script src="scripts/popup.js"></script>
+<!-- endbuild -->
+</body>
 </html>

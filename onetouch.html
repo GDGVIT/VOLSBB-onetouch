@@ -1,0 +1,172 @@
+<html>
+   <head>
+      <title>VOLSWIFI Authentication</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+      <link href="/Images/css.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+         <!--body {	margin-left: 0px;	margin-top: 1%;	margin-right: 0px;	margin-bottom: 0px;}-->.blink {	-webkit-animation: blink 2.0s  linear infinite;	-moz-animation: blink 2.0s  linear infinite;	-ms-animation: blink 2.0s  linear infinite;	-o-animation: blink 2.0s  linear infinite;	 animation: blink 2.0s  linear infinite;}@-webkit-keyframes blink {	0% { opacity: 1; }	50% { opacity: 1; }	50.01% { opacity: 0; }	100% { opacity: 0; }}@-moz-keyframes blink {	0% { opacity: 1; }	50% { opacity: 1; }	50.01% { opacity: 0; }	100% { opacity: 0; }}@-ms-keyframes blink {	0% { opacity: 1; }	50% { opacity: 1; }	50.01% { opacity: 0; }	100% { opacity: 0; }}@-o-keyframes blink {	0% { opacity: 1; }	50% { opacity: 1; }	50.01% { opacity: 0; }	100% { opacity: 0; }}@keyframes blink {	0% { opacity: 1; }	50% { opacity: 1; }	50.01% { opacity: 0; }	100% { opacity: 0; }}
+      </style>
+      <script language="javascript">var dayArray = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");var monthArray = new Array("January","February","March","April","May","June","July","August","September","October","November","December");var mynow = new Date();var mydate = mynow.getDate();var mymonth = mynow.getMonth();var myday = mynow.getDay();var myyear = mynow.getFullYear();var myhour = mynow.getHours();var dateStr = new String(dayArray[myday]+" "+monthArray[mymonth]+" "+mydate+", "+myyear);function formCheck(){	if(!document.forms[0].userId.value){		alert("Please enter your username to log in.");		document.forms[0].userId.focus();	return false;	}	if(!document.forms[0].password.value){		alert("Please enter your password to log in.");		document.forms[0].password.focus();		return false;	}	return true;}</script>
+   </head>
+   <body bgcolor="#B8C6BF" >
+      <table width="778px"  border="0" align="center" cellpadding="0" cellspacing="0">
+         <tr>
+            <td height="3" bgcolor="#000000" colspan="2"></td>
+         </tr>
+         <tr>
+            <td>
+               <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                     <td height="10" bgcolor="#97A69B" colspan="2"></td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <!--	  <td  width="345" height="63"><img src="/Images/logo.jpg" width="345" height="63"></td>        <td><img src="/Images/wisp.gif"></td> -->
+                     <td height="63" colspan="2"><img src="/Images/wisp.gif"></td>
+                     <!--<td bgcolor="#F6F8F5"></td>-->      
+                  </tr>
+                  <tr>
+                     <td height="3" colspan="2" bgcolor="#E7EBE5"></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2" bgcolor="#F6F8F5" >
+                        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td width="18%" rowspan="3" valign="top"></td>
+                              <td height="19">&nbsp;</td>
+                              <td width="18%" rowspan="3" valign="top"></td>
+                           </tr>
+                           <tr>
+                              <td width="64%" height="3"></td>
+                           </tr>
+                           <tr>
+                              <td height="213" valign="top">
+                                 <table width="350" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                       <td bgcolor="#E7EBE5" height="170px">
+                                          <table width="330px" border="0" align="center" cellpadding="1" cellspacing="0">
+                                             <tr>
+                                                <td bgcolor="#FFFFFF" height="100px">
+                                                   <table width="100%" border="0" cellspacing="0" cellpadding="1">
+                                                      <form action="/cgi-bin/authlogin?URI=http://go.microsoft.com/fwlink/" method="POST" onSubmit="return formCheck()";>
+                                                         <tr>
+                                                            <td>
+                                                               <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F5F2">
+                                                                  <tr>
+                                                                     <td colspan="2" height="10px"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td colspan="2" align="center" style="font-family:arial; font-size:13px; color:FF0000;"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td colspan="2" height="10px"></td>
+                                                                  </tr>
+                                                                  <!--		<td colspan="2" align="center" style="font-family:arial; font-size:13px; color:FF0000;">The wifi services in the campus are mostly restored. We are experiencing technical difficulties after implementing ssl certification for securing the services. We regret for the incovenience caused <br></td>                          <tr>                          <td colspan="2" height="10px"></td>                          </tr>--><!-- <td colspan="2" align="center" style="font-family:arial; font-size:13px; color:FF0000;"><b>"Due to the upgradation of network, there will be disturbance in the services. Sorry for the inconvenience caused"</b> <br></td> --!><td colspan="2" align="center" style="font-family:arial; font-size:13px; color:FF0000;"><b>1. 1st Year students are requested to collect WiFi application at TT-CTS office <br>2. Students other than 1st year are requested to create as new account for renewal with VIT Registration ID NO only (eg: 15BECXXXX). Do not add coupon into old accounts. Student will be issued only one coupon.</b> <br></td><!--<td colspan="2" align="center" style="font-family:arial; font-size:13px; color:0000FF;"><b><br> VIT VELLORE TECH SUPPORT - 9585556071/72 EMAIL - volswifi@gmail.com <br> VIT CHENNAI TECH SUPPORT - 9585556086 EMAIL - volswifichennai@gmail.com</b> <br></td>--!><!--<td colspan="2" align="center" style="font-family:arial; font-size:13px; color:FF0000;" class="tab blink"><b><br> "Kind attention to all the user's : There's been a Database Maintenance on May 1st(sunday) between 6AM to 11AM. Internet services shall be stopped during the maintenance and the same will resume at 11AM. User's are requested to co-operate during the maintenance. Thank you"</b> <br></td>--!><!--<td colspan="2" align="center" style="font-family:arial; font-size:13px; color:FF0000;"><b><br> "Kind attention to all,<br> there is been an emergency server maintenance on tomorrow (12.03.2016) between 10am to 11am. The internet services will resume after the maintenance activity. Thank you for the co-operation"</b> <br></td>--!><!--td colspan="2" align="center" style="font-family:arial; font-size:12px; color:0000FF;"><b><br> Kind Attention<br>&nbsp;We have Inducted  Dual Band Routers  in the Wi-Fi Network.<br>&nbsp;For better performance users who are using  5Ghz Wi-Fi card are requested to &nbsp;connect to VIT5G  SSID<br>&nbsp;For those who have 2.4Ghz  Wi-Fi card are requested to connect to VIT2.4G  &nbsp;SSID</b> <br></td--><!--<span colspan="2" align="center" style="font-family:arial; color:0000FF;"><center>"Kind attention to all the VOLS WIFI user's (VIT-Vellore campus only), we hereby informing to all that the location of VOLS office is moving to <b style= "font-size:15px;color:FF0000;" > TT-CTS Ground floor </b> effective from <b style= "font-size:15px;color:FF0000;">July 1st</b>. All the VOLSBB wifi queries, account renewal's and complaint can further be reported to VOLS office at TT-CTS".</center></span> -->                          
+                                                                  <tr>
+                                                                     <td colspan="2" height="10px"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td colspan="2" align="center" class="blackText13">VOLSBB Authentication</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td colspan="2" height="10px"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td align="right" class="blackText11">Username :</td>
+                                                                     <td width="59%">&nbsp;&nbsp;                                        <input name="userId" type="text" size="15" class="textBox"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td colspan="2" height="10px"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td align="right" class="blackText11">Password : </td>
+                                                                     <td>&nbsp;&nbsp;                                        <input name="password" type="password" size="15" class="textBox">										<input type="hidden" name="serviceName" value="ProntoAuthentication"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <!--          <td colspan="2" class="blackText11" align="center">                                         <input type="checkbox" name="dynamicMacAuth" value="true" disabled>                                        Store these credentials for future authentication (For prepaid users only)                                    </td> -->                                  
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td colspan="2" height="10px"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td>&nbsp;</td>
+                                                                     <td>&nbsp;&nbsp;                                        <input type="submit" name="Submit22" value="Login" class="loginbutton"></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td colspan="2" height="10px"></td>
+                                                                  </tr>
+                                                               </table>
+                                                            </td>
+                                                         </tr>
+                                                      </form>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F6F8F5">
+                                    <tr>
+                                       <td width="59%" height="15px"></td>
+                                    </tr>
+                                    <tr>                </tr>
+                                    <tr>
+                                       <td height="5px"></td>
+                                    </tr>
+                                    <tr>
+                                       <td align="center" class="blackText13"><a href="http://115.248.50.60/registration/customization/1/ChooseAuthOfflineRec.jsp?wispId=1&orgUrl=http://go.microsoft.com/fwlink/&dynMacAuth=disabled&hidWispId=1" class="orangeText10">New Users : Register here</a></td>
+                                    </tr>
+                                    <tr>
+                                       <td><br /></td>
+                                    </tr>
+                                    <tr>
+                                       <td height="10px" align="center"><a href="http://115.248.50.60/registration/Main.jsp?wispId=1&nasId=28:92:4a:3a:bd:00" class="orangeText10">Returning Users : Manage my account</a></td>
+                                    </tr>
+                                    <tr>
+                                       <td height="10px" align="center">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                       <td height="5px"></td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td height="3" colspan="2" bgcolor="#E7EBE5"></td>
+                  </tr>
+                  <tr>      </tr>
+                  <tr>
+                     <td height="3" colspan="2" bgcolor="#E7EBE5"></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2" bgcolor="#F6F8F5"></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2" bgcolor="#F6F8F5">
+                        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td width="130" height="120" align="left"><img src="/Images/location.jpg"></td>
+                              <!--td width="206" height="120" align="center">VIT VELLORE TECH SUPPORT - 9585556071/72 EMAIL - volswifi@gmail.com <br> VIT CHENNAI TECH SUPPORT - 9585556086 EMAIL - volswifichennai@gmail.com</td-->            <!---td colspan="2" align="center" style="font-family:arial; font-size:13px; color:0000FF;"><b><br> VIT VELLORE TECH SUPPORT - 9585556071/72 EMAIL - volswifi@gmail.com <br> VIT CHENNAI TECH SUPPORT - 9585556086 EMAIL - volswifichennai@gmail.com</b> <br></td-->           
+                              <td colspan="2" align="center" style="font-family:arial; font-size:12px; color:0000FF;"><b><br> Kind Attention<br>&nbsp;We have Inducted  Dual Band Routers  in the Wi-Fi Network.<br>&nbsp;For better performance users who are using  5Ghz Wi-Fi card are requested to &nbsp;connect to VIT5G  SSID<br>&nbsp;For those who have 2.4Ghz  Wi-Fi card are requested to connect to VIT2.4G  &nbsp;SSID</b> <br></td>
+                              <!--td colspan="2" align="center" style="font-family:arial; font-size:13px; color:FF0000;"><b><br> "Kind attention to all,<br> there is been an emergency server maintenance on tomorrow (12.03.2016) between 10am to 11am. The internet services will resume after the maintenance activity. Thank you for the co-operation"</b> <br></td-->            <!--td width="97" height="120"></td>            <td  width="202" height="120"></td-->            
+                              <td width="138" height="120" align="right"><img src="/Images/franchise.jpg"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="2" bgcolor="#97A69B" width="800" height="10"></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2" bgcolor="#000000" height="3"></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

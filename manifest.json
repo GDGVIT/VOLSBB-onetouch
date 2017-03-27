@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "VOLSBB oneTouch",
+  "description": "Web port of VOLSBB one touch ",
   "version": "1.0",
 
   "browser_action": {
@@ -11,12 +11,12 @@
   },
   "permissions": [
     "activeTab",
-    "cookies",
+    "storage",
     "*://*.prontonetworks.com/*"
   ],
   "background":{
     "scripts":[
-      "background.js"
+      "scripts/background.js"
     ]
   }
 }
